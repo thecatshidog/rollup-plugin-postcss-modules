@@ -1,10 +1,13 @@
 {
-  "name": "rollup-plugin-postcss-modules",
-  "version": "1.0.8",
+  "name": "rollup-plugin-postcss-modules2",
+  "version": "1.0.0",
   "description": "rollup-plugin-postcss wrapper with built-in CSS module and TypeScript support",
   "main": "index.js",
   "typings": "index.d.ts",
-  "repository": "https://github.com/flying-sheep/rollup-plugin-postcss-modules.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecatshidog/rollup-plugin-postcss-modules.git"
+  },
   "author": "thcatshidog",
   "license": "GPL-3.0",
   "scripts": {
@@ -43,5 +46,15 @@
     "mz": "^2.6.0",
     "postcss-modules": "^0.8.0",
     "rollup-plugin-postcss": "^0.5.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/thecatshidog/rollup-plugin-postcss-modules/issues"
+  },
+  "homepage": "https://github.com/thecatshidog/rollup-plugin-postcss-modules#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "rollup"
+  ]
 }
