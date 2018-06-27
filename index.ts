@@ -11,10 +11,7 @@ import { Plugin } from 'rollup'
 import { Transformer } from 'postcss'
 
 const formatCSSDefinition = (name: string, classNames: string[]) => `\
-declare namespace ${name} {
-	${classNames.map(t => `const ${t}: string`).join('\n\t')}
-}
-export default ${name}`
+	export ${classNames.map(t => `const ${t}: string`).join('\n\t')}`
 
 async function writeCSSDefinition(cssPath: string, classNames: string[]): Promise<string> {
 	const name = camelcase(path.basename(cssPath, '.css'))
