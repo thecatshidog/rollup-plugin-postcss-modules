@@ -5,7 +5,7 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "repository": "https://github.com/flying-sheep/rollup-plugin-postcss-modules.git",
-  "author": "Philipp A.",
+  "author": "thcatshidog",
   "license": "GPL-3.0",
   "scripts": {
     "build": "tsc",
