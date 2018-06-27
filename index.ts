@@ -11,7 +11,7 @@ import { Plugin } from 'rollup'
 import { Transformer } from 'postcss'
 
 const formatCSSDefinition = (name: string, classNames: string[]) => `\
-	export ${classNames.map(t => `const ${t}: string`).join('\n\t')}`
+export ${classNames.map(t => `const ${t}: string`).join('\n\t')}`
 
 async function writeCSSDefinition(cssPath: string, classNames: string[]): Promise<string> {
 	const name = camelcase(path.basename(cssPath, '.css'))
@@ -68,7 +68,7 @@ export default function eslintPluginPostCSSModules(options: Options = {}): Promi
 		// own options
 		writeDefinitions = false,
 		modules = {},
-		...rest,
+		...rest
 	} = options
 	if (rest.getExport) {
 		throw new Error("rollup-plugin-postcss-modules' provides getExport, you cannot specify your own.")

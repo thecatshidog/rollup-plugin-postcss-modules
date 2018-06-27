@@ -1,4 +1,1 @@
-declare namespace in {
-	const test: string
-}
-export default in
+export const test: string
